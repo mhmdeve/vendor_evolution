@@ -42,7 +42,7 @@ evolution: otatools brillo_update_payload checkvintf $(OTA_PACKAGE_TARGET)
 
 endif
 
-ifeq ($(EVO_BUILD_TYPE), OFFICIAL)
+ifeq ($(EVO_BUILD_TYPE), SPECIAL)
 
 SIGNED_TARGET_FILES_PACKAGE := $(PRODUCT_OUT)/$(TARGET_DEVICE)-target_files-$(BUILD_ID_LC).zip
 SIGN_FROM_TARGET_FILES := $(HOST_OUT_EXECUTABLES)/sign_target_files_apks$(HOST_EXECUTABLE_SUFFIX)
